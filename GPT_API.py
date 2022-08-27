@@ -55,4 +55,4 @@ def main():
     return render_template('main.html')
 
 if __name__ == '__main__':
-    serve(app, host='0.0.0.0', port=80)
+    serve(app, host='0.0.0.0', port=9999)
