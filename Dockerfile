@@ -4,7 +4,7 @@ WORKDIR /app
 COPY requirements.txt requirements.txt
 RUN pip3 install -r requirements.txt
 RUN pip install gdown
-RUN gdown https://drive.google.com/file/d/1qSrXy-ZEvPVTArPsOA19OoCayw1_xcFz/view?usp=sharing
+RUN gdown https://drive.google.com/file/d/1qSrXy-ZEvPVTArPsOA19OoCayw1_xcFz
 COPY . .
 
 EXPOSE 80
