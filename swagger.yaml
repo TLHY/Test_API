@@ -1,0 +1,10 @@
+info:
+  title: TextWithGameCharacters
+  description: |
+    Generates text when user gives input
+    ---
+      How to use:
+      * Enter some chat to the input field
+      * Rest will be played
+servers:
+  - url: https://main-text-with-game-characters-tlhy.endpoint.ainize.ai
