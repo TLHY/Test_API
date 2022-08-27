@@ -1,7 +1,7 @@
 from flask import Flask,request,jsonify,render_template
 from transformers import AutoTokenizer,AutoModelForCausalLM
 import torch
-
+from waitress import serve
 import time
 app=Flask(__name__)
 
@@ -47,4 +47,4 @@ def main():
     return render_template('main.html')
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', debug=True,port=80)
+     serve(app, host='0.0.0.0', port=80)
