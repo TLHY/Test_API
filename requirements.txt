@@ -3,3 +3,4 @@ Werkzeug==2.2.2
 torch==1.12.1
 transformers==4.21.2
 regex==2022.8.17
+waitress==1.4.4
