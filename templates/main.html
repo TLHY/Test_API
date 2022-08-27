@@ -1,14 +1,31 @@
 <!DOCTYPE html>
 <html>
+<style>
+    textarea{
+        width:100%;
+        height:300px;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        background-image: url('/static/chat_screen.png');
+        background-repeat: no-repeat;
+        background-position: right;
+        font-size: 16px;
+        font-weight: bolder
+    }
+</style>
 <body>
-    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+        <div class="container">
+            <textarea>{{Main_Text}}{{NPC_Text}}
+            </textarea>  
+        </div>
     <form action ='/gen' method="POST">
-        <label for="username">Pokemon Name:</label>
-        <input type="text" name="username" id="username">
+        <label for="myText">Enter Message:</label>
+        <input type="text" name="myText" id="myText">
         <input type="submit" name="submit" id="submit">
         <br>
-        {{username}}
     </form>
 </body>
 </html>
